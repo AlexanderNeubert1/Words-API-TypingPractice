@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Typing Practice</title>
+  <link rel="stylesheet" href="final-version-style.css">
+</head>
+
+<body>
+  <div class=typing-practice__main>
+    <h1 class="main__header">- Typing Practice -</h1>
+    <button type="button" class="open-stats-button">Stats</button>
+
+    <div class="main__word-amount">
+      <h3>Text Length:</h3>
+      <input type="text" class="word-amount__input" placeholder=" Number">
+    </div>
+
+    <div class="main__text-container">
+      <p class="main-text"></p>
+    </div>
+
+    <div class="main__button-container">
+      <button type="button" class="main__reset-button" id="resetText">RESET RUN</button>
+      <button type="submit" class="main__generate-button" id="newText">Generate new Text</button>
+    </div>
+  </div>
+
+  <div class="typing-practice__stats-sidebar">
+    <button type="button" class="close-stats-button">close stats >>></button>
+
+    <div class="stats__list">
+      <h1 class="stats__header">Stats</h3>
+        <br>
+        <p class="stats__last-set-text">Last set:</p>
+        <p class="stats__text">Time: <span id="statsTextLastTime">_</span>s CPM: <span
+            id="statsTextLastCPM">_</span><br> Wrong chars: <span id="statsTextLastWrong">_</span>%</p>
+        <br>
+        <p class="stats__daily-sets-text">Today</p>
+        <p class="stats__text">Sets: <span id="statsTextDailySets"></span> Chars typed: <span
+            id="statsTextDailyChars"></span> <br>CPM: <span id="statsTextDailyCpm"></span> Time: <span
+            id="statsTextDailyTime"></span>s<br> Mistake ratio: <span id="statsTextDailyMistakes"></span>%</p>
+        <br>
+        <p class="stats__total-sets-text">Total:</p>
+        <p class="stats__text">Sets: <span id="statsTextGlobalSets"></span> CPM: <span id="statsTextGlobalCpm"></span>
+          Time: <span id="statsTextGlobalTime"></span>s <br>Mistake ratio:
+          <span id="statsTextGlobalRatio"></span>%
+        </p>
+    </div>
+
+    <button type="button" class=button--letter-stats>More Details</button>
+
+    <div class="delete__button-conatiner">
+      <button type="button" class="delete__button" id="deleteToday">DELETE TODAYS DATA</button>
+      <button type="button" class="delete__button" id="deleteAll">DELETE ALL DATA</button>
+    </div>
+  </div>
+
+  <div class="typing-practice__letter-stats">
+    <h2 class="letter-stats__header">Letter frequency</h2>
+    <p class="letters ">
+      a:<span class="characterStats"></span>%<br>
+      b:<span class="characterStats"></span>%<br>
+      c:<span class="characterStats"></span>%<br>
+      d:<span class="characterStats"></span>%<br>
+      e:<span class="characterStats"></span>%<br>
+      f:<span class="characterStats"></span>%<br>
+      g:<span class="characterStats"></span>%<br>
+      h:<span class="characterStats"></span>%<br>
+      i:<span class="characterStats"></span>%<br>
+      j:<span class="characterStats"></span>%<br>
+      k:<span class="characterStats"></span>%<br>
+      l:<span class="characterStats"></span>%<br>
+      m:<span class="characterStats"></span>%<br>
+      n:<span class="characterStats"></span>%<br>
+      o:<span class="characterStats"></span>%<br>
+      p:<span class="characterStats"></span>%<br>
+      q:<span class="characterStats"></span>%<br>
+      r:<span class="characterStats"></span>%<br>
+      s:<span class="characterStats"></span>%<br>
+      t:<span class="characterStats"></span>%<br>
+      u:<span class="characterStats"></span>%<br>
+      v:<span class="characterStats"></span>%<br>
+      w:<span class="characterStats"></span>%<br>
+      x:<span class="characterStats"></span>%<br>
+      y:<span class="characterStats"></span>%<br>
+      z:<span class="characterStats"></span>%<br>
+    </p>
+  </div>
+</body>
+<script src="final-version-script.js"></script>
+
+</html>
